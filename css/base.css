@@ -25,9 +25,33 @@ h6 {
 button {
     background-color: #606570;
     border: solid 1px #00000000;
+    font-size: 14px;
     color: white;
     display: inline-block;
     border-radius: 4px;
+    padding: 6px 12px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+}
+input {
+    background-color: #242424;
+    border: solid 1px #00000000;
+    font-size: 16px;
+    color: white;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 4px;
+    height: 20px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+    transform: translateY(1px);
+}
+select {
+    background-color: #606570;
+    border: solid 1px #00000000;
+    font-size: 14px;
+    color: white;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 5px 10px;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
 }
 button:hover {

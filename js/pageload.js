@@ -1,3 +1,12 @@
 $('#noload').replaceWith('<div></div>');
-$('#title').replaceWith("<title>PQCraft\'s Github.io Page: " + name + "</title>");
-$('#pgname').replaceWith('<div class="subheader"><b><a class="normcur hlink" style="font-size: 24px; color: white" HREF="" style="color: white">> ' + name + '</a></b></div>');
+function pgload() {
+    //console.log("name: {" + name +"}\n");
+    if (name != '') {
+        $('#title').replaceWith('<title id="title">PQCraft\'s Github.io Page: ' + name + '</title>');
+        $('#pgname').replaceWith('<div id="pgname" class="subheader"><b><a class="normcur hlink" style="font-size: 24px; color: white" HREF="" style="color: white">> ' + name + '</a></b></div>');
+    } else {
+        $('#title').replaceWith('<title id="title">PQCraft\'s Github.io Page');
+        $('#pgname').replaceWith('<div id="pgname" class="subheader"><b><a class="normcur hlink" style="font-size: 24px; color: white" HREF="" style="color: white"><br></a></b></div>');
+    }
+}
+pgload();

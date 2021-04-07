@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" style="padding: 0px" bgcolor=#313947>
+    <script language="JavaScript" type="text/javascript" src="/js/jquery.js"></script>
+    <head>
+        <script>var name=""</script>
+        <title id="title"></title>
+        <span id="meta"></span>
+        <script>$(document).ready(function(){$('#meta').load('/html/meta.htm');});</script>
+    </head>
+    <span id="header"></span>
+    <script>$(document).ready(function(){$('#header').load('/html/header.htm');});</script>
+    <div id="pgname"></div>
+    <div id="noload" style="color: white; font-size: 24px; text-align: center"><b><u>Page didn't load? Please enable JavaScript. JavaScipt is used to load page content (I might change that later).</u></b></div>
+    <body bgcolor=#313947>
+        <br>
+        <div class="body h1">
+            <h3>Enter a Custom Title!</h3>
+            <script language="JavaScript" type="text/javascript">function rfpg(){name=document.getElementById('ctitle').value;pgload();}</script>
+            <script language="JavaScript" type="text/javascript">function rfpg_s(){name=document.getElementById('stitle').value;pgload();}</script>
+            <script language="JavaScript" type="text/javascript" src="/js/pageload.js"></script>
+            <input id="ctitle" type="text" placeholder="Enter your title here" style="width: 390px"></input>
+            <span style="padding 2px 0px"></span><button onclick="rfpg_s()">Set</button>
+            <br><br>
+            <select id="stitle" name="examples" style="width: 400px">
+                <option></option>
+                <option>Test</option>
+                <option>Test</option>
+                <option>Bruh</option>
+                <option>E</option>
+                <option>This is a Page Title</option>
+                <option>Custom Title Magic</option>
+            </select>
+            <span style="padding 2px 0px"></span><button onclick="rfpg_s()">Set</button>
+            <script>ctitle.addEventListener("keydown",function(e){if (e.keyCode === 13){rfpg();}});</script>
+        </div>
+    </body>
+    <span id="footer">
+    <script>$(document).ready(function(){$('#footer').load('/html/footer.htm');});</script>
+</html>
