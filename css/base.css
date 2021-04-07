@@ -72,7 +72,7 @@ body {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 2;
+    z-index: 1;
 }
 .subheader {
     width: 80%;
@@ -85,7 +85,7 @@ body {
     left: 50%;
     width: 95%;
     transform: translateX(-50%);
-    z-index: 1;
+    z-index: 0;
 }
 .footer {
     padding: 4px;
@@ -100,7 +100,6 @@ body {
     left: 50%;
     bottom: 0px;
     transform: translateX(-50%);
-    z-index: 1;
 }
 .h1 {width: 90%;}
 .h2 {width: calc(90% - 4%); left: 52%}
