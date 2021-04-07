@@ -1,0 +1,150 @@
+h1 {
+    font-size: 36px;
+    padding: 0px;
+}
+h2 {
+    font-size: 32px;
+    padding: 0px;
+}
+h3 {
+    font-size: 32px;
+    padding: 0px;
+}
+h4 {
+    font-size: 30px;
+    padding: 0px;
+}
+h5 {
+    font-size: 28px;
+    padding: 0px;
+}
+h6 {
+    font-size: 26px;
+    padding: 0px;
+}
+button {
+    background-color: #606570;
+    border: solid 1px #00000000;
+    color: white;
+    display: inline-block;
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+}
+button:hover {
+    border: solid 1px #315BEF;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+}
+html, body {
+    cursor: default;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 18px;
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 18px;
+    position: relative;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.body {
+    color: white;
+    font-size: 18px;
+    position: relative;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, 12px);
+}
+.header {
+    padding: 4px;
+    text-align: center;
+    background: #373E4F;
+    color: white;
+    font-size: 32px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 0px 0px 5px 5px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.subheader {
+    width: 80%;
+    background: #373E4F;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 0px 0px 5px 5px;
+    font-size: 24px;
+    padding: 8px;
+    position: relative;
+    left: 50%;
+    width: 95%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+.footer {
+    padding: 4px;
+    background: #373E4F;
+    color: white;
+    font-size: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 4px 4px 0px 0px;
+    position: fixed;
+    width: 100%;
+    height: 16px;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+}
+.h1 {width: 90%;}
+.h2 {width: calc(90% - 4%); left: 52%}
+.h3 {width: calc(90% - 8%); left: 54%}
+.h4 {width: calc(90% - 12%); left: 56%}
+.h5 {width: calc(90% - 16%); left: 58%}
+.h6 {width: calc(90% - 20%); left: 60%}
+.normcur {cursor: default;}
+.linkcur {cursor: pointer;}
+a {
+    color: #72C4FF;
+}
+a.link1:link {
+    text-decoration: none;
+}
+a.link1:visited {
+    text-decoration: none;
+}
+a.link1:hover {
+    text-decoration: underline;
+}
+a.link1:active {
+    text-decoration: underline;
+}
+a.hlink:link {
+    text-decoration: none;
+}
+a.hlink:visited {
+    text-decoration: none;
+}
+a.hlink:hover {
+    text-decoration: none;
+}
+a.hlink:active {
+    text-decoration: none;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: underline;
+}
