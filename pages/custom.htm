@@ -16,13 +16,13 @@
         <div class="body h1">
             <h3>Enter a Custom Title!</h3>
             <script language="JavaScript" type="text/javascript">function rfpg(){name=document.getElementById('ctitle').value;pgload();}</script>
-            <script language="JavaScript" type="text/javascript">function rfpg_s(){name=document.getElementById('stitle').value;pgload();}</script>
+            <script language="JavaScript" type="text/javascript">function rfpg_s(){if(document.getElementById('stitle').value!='')name=document.getElementById('stitle').value;pgload();}</script>
             <script language="JavaScript" type="text/javascript" src="/js/pageload.js"></script>
             <input id="ctitle" type="text" placeholder="Enter your title here" style="width: 390px"></input>
-            <span style="padding 2px 0px"></span><button onclick="rfpg_s()">Set</button>
+            <span style="padding 2px 0px"></span><button onclick="rfpg()">Set</button>
             <br><br>
-            <select id="stitle" name="examples" style="width: 400px">
-                <option></option>
+            <select id="stitle" name="examples" class="select" style="width: 400px">
+                <option value="" disabled selected>Example Titles</option>
                 <option>Test</option>
                 <option>Test</option>
                 <option>Bruh</option>
