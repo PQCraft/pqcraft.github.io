@@ -56,9 +56,25 @@ select {
 }
 button:hover {
     border: solid 1px #315BEF;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+}
+select:hover, input:focus {
+    border: solid 1px #315BEF;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+}
+button:active, select:active {
+    border: solid 1px #315BEF;
+    background-color: #315BEF;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+}
+button:focus, input:focus, select:focus {
+    outline: none;
+}
+select option {
+    background-color: #242424;
 }
 html, body {
+    outline: none;
     cursor: default;
     padding: 0;
     margin: 0;
@@ -78,6 +94,7 @@ body {
     transform: translateX(-50%);
 }
 .body {
+    outline: none;
     color: white;
     font-size: 18px;
     position: relative;
