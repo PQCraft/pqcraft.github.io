@@ -1,8 +1,8 @@
 $('#noload').replaceWith('<div></div>');
 function pgload() {
     //console.log("name: {" + name +"}\n");
-    var divprop1 = '<div id="pgname" class="subheader" style="padding: 0px 14px; height: 34px;"><b><a class="normcur hlink" style="font-size: 18px; color: white;" HREF="" style="color: white">';
-    var divprop2 = '</a></b></div>'
+    var divprop1 = '<div id="pgname" style="display: block"><div class="subheader" style="height: 32px;"><b><a class="normcur hlink" style="font-size: 18px; color: white;" HREF="" style="color: white">';
+    var divprop2 = '</a></b></div><br><br></div>'
     if (name != '') {
         $('#title').replaceWith('<title id="title">PQCraft\'s Github.io Page: ' + name + '</title>');
         $('#pgname').replaceWith(divprop1 + '>&nbsp;&nbsp;' + name + divprop2);

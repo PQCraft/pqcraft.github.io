@@ -116,16 +116,17 @@ body {
     z-index: 2;
 }
 .subheader {
-    width: 80%;
     background: #373E4F;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
     font-size: 24px;
-    padding: 8px;
     position: relative;
     left: 50%;
-    width: 95%;
-    transform: translateX(-50%);
+    width: calc(95% - 2vw);
+    padding: 0px 14px;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    transform: translate(-50%, 24px);
     z-index: 1;
 }
 .footer {
