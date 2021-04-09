@@ -124,7 +124,7 @@ body {
     left: 50%;
     width: calc(95% - 2vw);
     padding: 0px 14px;
-    padding-bottom: 2px;
+    padding-bottom: 3px;
     padding-top: 1px;
     transform: translate(-50%, 24px);
     z-index: 1;
