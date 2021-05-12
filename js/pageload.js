@@ -7,7 +7,7 @@ function pgload() {
         $('#title').replaceWith('<title id="title">PQCraft\'s Github.io Page: ' + name + '</title>');
         $('#pgname').replaceWith(divprop1 + '>&nbsp;&nbsp;' + name + divprop2);
     } else {
-        $('#title').replaceWith('<title id="title">PQCraft\'s Github.io Page');
+        $('#title').replaceWith('<title id="title">PQCraft\'s Github.io Page</title>');
         $('#pgname').replaceWith(divprop1 + '<br>' + divprop2);
     }
 }
