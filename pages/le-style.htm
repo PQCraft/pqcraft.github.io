@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" style="padding: 0px">
+    <script language="JavaScript" type="text/javascript" src="/js/jquery.js"></script>
+    <head>
+        <script>var name="Coding Style"</script>
+        <title id="title"></title>
+        <span id="meta"></span>
+        <script>$(document).ready(function(){$('#meta').load('/html/meta.htm');});</script>
+    </head>
+    <span id="header"></span>
+    <script>$(document).ready(function(){$('#header').load('/html/header.htm');});</script>
+    <div id="pgname"></div>
+    <body bgcolor=#313947>
+        <div class="body">
+            <h1>My Coding Style</h1>
+            4-space indent<br>
+            lowerCamelCase/bumpyCase when name contains full words<br>
+            lowercase when name contains abbreviations or short words<br>
+        </div>
+        <br>
+        <div class="body h2">
+            <h4>C</h4>
+            <div class="code">
+            <code_keyword>
+            #include &#60;header.h&#62;<br>
+            #include "local-header.h"<br>
+            <br>
+            #define MACRO1 VALUE1<br>
+            #define MACRO2 VALUE2<br>
+            #define MACRO3 VALUE3<br>
+            </code_keyword>
+            <br>
+            <code_type>int</code_type> var1 = <code_number>0</code_number>, var2 = <code_number>0</code_number>;<br>
+            <br>
+            <code_type>int</code_type> <code_function>main</code_function>(<code_type>int</code_type> argc, <code_type>char</code_type>* argv[]) {<br>
+            <code_comment>
+            <tb>// comment<br>
+            <tb>/* block comment */<br>
+            <tb>/*<br>
+            <tb><tb>multi-line<br>
+            <tb><tb>block<br>
+            <tb><tb>comment<br>
+            <tb>*/<br>
+            </code_comment>
+            <tb>var1 += <code_function>randFunc</code_function>();<br>
+            <tb>var2 += <code_function>retgetval</code_function>(<code_string>"Test"</code_string>);<br>
+            <tb><code_function>callFunction</code_function>(<code_string>"const"</code_string>);<br>
+            <tb><code_command>if</code_command> (var1 == var2) <code_function>oneLine</code_function>();<br>
+            <tb>var1++;<br>
+            <tb><code_command>if</code_command> (var1 == var2) {<br>
+            <tb><tb><code_function>func1</code_function>();<br>
+            <tb><tb>if (<code_function>func2</code_function>()) {if (!<code_function>func3</code_function>()) {<code_function>puts</code_function>(<code_string>"func3() returned NULL."</code_string>);} var2++;}<br>
+            <tb><tb><code_label>try-again</code_label>:<br>
+            <tb><tb>var2++;<br>
+            <tb><tb>var2 = <code_function>retnumgc</code_function>(&var2);<br>
+            <tb><tb><code_command>switch</code_command> (var2) {<br>
+            <tb><tb><tb><code_command>case</code_command> <code_number>0</code_number>:<br>
+            <tb><tb><tb><tb><code_function>printf</code_function>(<code_string>"[%d]\n"</code_string>, var2);<br>
+            <tb><tb><tb><tb><code_command>break</code_command>;<br>
+            <tb><tb><tb><code_command>default</code_command>:<br>
+            <tb><tb><tb><tb><code_command>goto</code_command> <code_label>try-again</code_label>;<br>
+            <tb><tb><tb><tb><code_command>break</code_command>;<br>
+            <tb><tb>}<br>
+            <tb><tb>var1 = <code_function>sample</code_function>(var2);<br>
+            <tb><tb><code_command>return</code_command> <code_function>getcleanret</code_function>(var1, var2);<br>
+            <tb>}<br>
+            }
+            </div>
+        </div
+    </body>
+    <span id="footer"></span>
+    <script>$(document).ready(function(){$('#footer').load('/html/footer.htm');});</script>
+    <script language="JavaScript" type="text/javascript" src="/js/pageload.js"></script>
+</html>

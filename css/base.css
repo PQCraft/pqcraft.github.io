@@ -35,7 +35,7 @@ button {
     background-color: #606570;
     border: solid 1px #00000000;
     font-size: 14px;
-    color: white;
+    color: #fdfdfd;
     display: inline-block;
     border-radius: 4px;
     padding: 6px 12px;
@@ -45,7 +45,7 @@ input {
     background-color: #242424;
     border: solid 1px #00000000;
     font-size: 16px;
-    color: white;
+    color: #fdfdfd;
     display: inline-block;
     border-radius: 4px;
     padding: 4px;
@@ -57,7 +57,7 @@ select {
     background-color: #606570;
     border: solid 1px #00000000;
     font-size: 14px;
-    color: white;
+    color: #fdfdfd;
     display: inline-block;
     border-radius: 4px;
     padding: 5px 10px;
@@ -83,6 +83,7 @@ select option {
     background-color: #242424;
 }
 html, body {
+    background-color: #313947;
     outline: none;
     cursor: default;
     padding: 0;
@@ -95,14 +96,13 @@ html {
 body {
     min-height: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: #fdfdfd;
     font-size: 18px;
     position: relative;
     width: 90%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #313947;
-    line-height: 1.125
+    fline-height: 1.5
 }
 code {
     display: inline-block;
@@ -113,7 +113,37 @@ code {
     margin-top: 8px;
     margin-bottom: 8px;
     word-break: break-word;
-    border-radius: 6px 6px 6px 6px;
+}
+code_choice {
+    color: #EDAE54;
+}
+code_inchoice {
+    font-weight: bold;
+    font-style: oblique;
+}
+code_comment {
+    color: #7f7f7f;
+}
+code_type {
+    color: #0065FF;
+}
+code_keyword {
+    color: #2BECFF;
+}
+code_command {
+    color: #2BEF46;
+}
+code_function {
+    color: #FBE430;
+}
+code_number {
+    color: #FF533F;
+}
+code_string {
+    color: #C62EE8;
+}
+code_label {
+    color: #FA49C0;
 }
 .code {
     display: block;
@@ -125,17 +155,20 @@ code {
     margin-top: 8px;
     margin-bottom: 8px;
     word-break: break-word;
-    border-radius: 6px 6px 6px 6px;
 }
 code, .code {
     background: #151D2B;
+    font-size: 16px;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.35);
 }
 code:hover, .code:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     background: #1B2331;
 }
 .body {
     outline: none;
-    color: white;
+    color: #fdfdfd;
     font-size: 18px;
     position: relative;
     width: 90%;
@@ -146,7 +179,7 @@ code:hover, .code:hover {
     padding: 4px;
     text-align: center;
     background: #2B2B36;
-    color: white;
+    color: #fdfdfd;
     font-size: 32px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 0px 0px 5px 5px;
@@ -172,7 +205,7 @@ code:hover, .code:hover {
 .footer {
     padding: 4px;
     background: #2B2B36;
-    color: white;
+    color: #fdfdfd;
     font-size: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px 5px 0px 0px;
@@ -189,7 +222,7 @@ code:hover, .code:hover {
 }
 .header:hover, .subheader:hover, .footer:hover {
     background: #343C4C;
-    box-shadow: 0 0 14px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.65);
 }
 .h1 {width: 90%;}
 .h2 {width: calc(90% - 4%); left: 52%}
