@@ -48,7 +48,7 @@ input {
     color: #fdfdfd;
     display: inline-block;
     border-radius: 4px;
-    padding: 4px;
+    padding: 4px 8px 4px 8px;
     height: 20px;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
     transform: translateY(1px);
@@ -60,7 +60,7 @@ select {
     color: #fdfdfd;
     display: inline-block;
     border-radius: 4px;
-    padding: 5px 10px;
+    padding: 5px 4px;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
 }
 button:hover {
@@ -114,13 +114,6 @@ code {
     margin-bottom: 8px;
     word-break: break-word;
 }
-code_choice {
-    color: #EDAE54;
-}
-code_inchoice {
-    font-weight: bold;
-    font-style: oblique;
-}
 code_comment {
     color: #7f7f7f;
 }
@@ -144,6 +137,15 @@ code_string {
 }
 code_label {
     color: #FA49C0;
+}
+note {
+    color: #FFE28B;
+    font-style: italic;
+}
+warn {
+    color: #FF3B3A;
+    font-weight: bold;
+    font-style: oblique;
 }
 .code {
     display: block;

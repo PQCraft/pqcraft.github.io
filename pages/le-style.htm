@@ -13,13 +13,15 @@
     <body bgcolor=#000000>
         <div class="body">
             <h1>My Coding Style</h1>
+            <h6>Some pseudocode-like examples of how I write code</h6>
         </div>
-        <br>
+        <br id="C">
         <div class="body h2">
             <h4>C</h4>
             4-space indent<br>
             lowerCamelCase/bumpyCase when name contains full words<br>
             lowercase when name contains abbreviations or short words<br>
+            <note>NOTE: This code is formatted for GCC C99</note><br>
             <br>
             <div class="code">
             <code_keyword>
@@ -43,14 +45,14 @@
             <tb><tb>comment<br>
             <tb>*/<br>
             </code_comment>
-            <tb>var1 += <code_function>randFunc</code_function>();<br>
+            <tb>var1 += <code_function>randFunc</code_function>() + <code_number>1</code_number>;<br>
             <tb>var2 += <code_function>retgetval</code_function>(<code_string>"Test"</code_string>);<br>
             <tb><code_function>callFunction</code_function>(<code_string>"const"</code_string>);<br>
             <tb><code_command>if</code_command> (var1 == var2) <code_function>oneLine</code_function>();<br>
             <tb>var1++;<br>
             <tb><code_command>if</code_command> (var1 == var2) {<br>
             <tb><tb><code_function>func1</code_function>();<br>
-            <tb><tb>if (<code_function>func2</code_function>()) {if (!<code_function>func3</code_function>()) {<code_function>puts</code_function>(<code_string>"func3() returned NULL."</code_string>);} var2++;}<br>
+            <tb><tb>if (<code_function>func2</code_function>(<code_string>"Test"</code_string>, <code_number>-1</code_number>)) {if (!<code_function>func3</code_function>()) {<code_function>puts</code_function>(<code_string>"func3() returned NULL."</code_string>);} var2++;}<br>
             <tb><tb><code_label>try-again</code_label>:<br>
             <tb><tb>var2++;<br>
             <tb><tb>var2 = <code_function>retnumgc</code_function>(&var2);<br>
@@ -70,11 +72,12 @@
         </div>
         <br>
         <br>
-        <div class="divider"></div>
+        <div class="divider" id="BASIC"></div>
         <div class="body h2">
             <h4>BASIC</h4>
             4-space indent<br>
             UPPERCASE<br>
+            <note>NOTE: This code is formatted for QB64</note><br>
             <br>
             <div class="code">
             <code_comment>
@@ -110,12 +113,13 @@
         </div>
         <br>
         <br>
-        <div class="divider"></div>
+        <div class="divider" id="Sh"></div>
         <div class="body h2">
-            <h4>SH</h4>
+            <h4>Unix Shell Script (sh/bash)</h4>
             4-space indent<br>
             lowercase commands<br>
             UPPERCASE variables<br>
+            <note>NOTE: This code is formatted for bash</note><br>
             <br>
             <div class="code">
             <code_comment>
