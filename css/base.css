@@ -1,3 +1,6 @@
+:root {
+    --font-color: #f0f0f0;
+}
 h1 {
     font-size: 32px;
     padding: 0px;
@@ -35,7 +38,7 @@ button {
     background-color: #606570;
     border: solid 1px #00000000;
     font-size: 14px;
-    color: #fdfdfd;
+    color: var(--font-color);
     display: inline-block;
     border-radius: 4px;
     padding: 6px 12px;
@@ -45,7 +48,7 @@ input {
     background-color: #242424;
     border: solid 1px #00000000;
     font-size: 16px;
-    color: #fdfdfd;
+    color: var(--font-color);
     display: inline-block;
     border-radius: 4px;
     padding: 4px 8px 4px 8px;
@@ -57,7 +60,7 @@ select {
     background-color: #606570;
     border: solid 1px #00000000;
     font-size: 14px;
-    color: #fdfdfd;
+    color: var(--font-color);
     display: inline-block;
     border-radius: 4px;
     padding: 5px 4px;
@@ -96,13 +99,12 @@ html {
 body {
     min-height: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    color: #fdfdfd;
+    color: var(--font-color);
     font-size: 18px;
     position: relative;
     width: 90%;
     left: 50%;
     transform: translateX(-50%);
-    fline-height: 1.5
 }
 code {
     display: inline-block;
@@ -168,6 +170,9 @@ code:hover, .code:hover {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     background: #1B2331;
 }
+.text {
+    color: var(--font-color);
+}
 .divider {
     display: block;
     padding: 2px;
@@ -182,7 +187,7 @@ code:hover, .code:hover {
 }
 .body {
     outline: none;
-    color: #fdfdfd;
+    color: var(--font-color);
     font-size: 18px;
     position: relative;
     width: 90%;
@@ -193,7 +198,7 @@ code:hover, .code:hover {
     padding: 4px;
     text-align: center;
     background: #2B2B36;
-    color: #fdfdfd;
+    color: var(--font-color);
     font-size: 32px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 0px 0px 5px 5px;
@@ -219,7 +224,7 @@ code:hover, .code:hover {
 .footer {
     padding: 4px;
     background: #2B2B36;
-    color: #fdfdfd;
+    color: var(--font-color);
     font-size: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px 5px 0px 0px;
