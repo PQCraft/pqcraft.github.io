@@ -10,16 +10,17 @@
     <span id="header"></span>
     <script>$(document).ready(function(){$('#header').load('/html/header.htm');});</script>
     <div id="pgname"></div>
-    <body bgcolor=#313947>
+    <body bgcolor=#000000>
         <div class="body">
             <h1>My Coding Style</h1>
-            4-space indent<br>
-            lowerCamelCase/bumpyCase when name contains full words<br>
-            lowercase when name contains abbreviations or short words<br>
         </div>
         <br>
         <div class="body h2">
             <h4>C</h4>
+            4-space indent<br>
+            lowerCamelCase/bumpyCase when name contains full words<br>
+            lowercase when name contains abbreviations or short words<br>
+            <br>
             <div class="code">
             <code_keyword>
             #include &#60;header.h&#62;<br>
@@ -66,7 +67,79 @@
             <tb>}<br>
             }
             </div>
-        </div
+        </div>
+        <br>
+        <br>
+        <div class="divider"></div>
+        <div class="body h2">
+            <h4>BASIC</h4>
+            4-space indent<br>
+            UPPERCASE<br>
+            <br>
+            <div class="code">
+            <code_comment>
+            'Comment<br>
+            <br>
+            'Multi-line<br>
+            'Comment<br>
+            </code_comment>
+            <br>
+            <code_command>FOR</code_command> I = <code_number>0</code_number> <code_keyword>TO</code_keyword> <code_number>3</code_number><br>
+            <tb><code_command>PRINT</code_command> <code_string>"Test"</code_string><br>
+            <code_command>NEXT</code_command><br>
+            <br>
+            <code_command>DIM</code_command> TEST(<code_number>0</code_number> <code_keyword>TO</code_keyword> <code_number>255</code_number>) <code_keyword>AS</code_keyword> <code_type>_BYTE</code_type><br>
+            <br>
+            <code_command>LOCATE</code_command> <code_number>1</code_number>, <code_number>1</code_number><br>
+            <br>
+            <code_command>FOR</code_command> Y = <code_number>0</code_number> <code_keyword>TO</code_keyword> <code_number>15</code_number><br>
+            <tb><code_command>FOR</code_command> X = <code_number>0</code_number> <code_keyword>TO</code_keyword> <code_number>15</code_number><br>
+            <tb><tb>P = (X * <code_number>16</code_number>) + Y<br>
+            <tb><tb>ARRAY(P) = <code_function>CINT</code_function>(RND * <code_number>255</code_number>)<br>
+            <tb><tb><code_command>IF</code_command> ARRAY(P) < <code_number>32</code_number> <code_keyword>OR</code_keyword> ARRAY(P) > <code_number>126</code_number> <code_keyword>THEN</code_keyword> ARRAY(P) = <code_number>46</code_number><br>
+            <tb><code_command>NEXT</code_command><br>
+            <code_command>NEXT</code_command><br>
+            <br>
+            <code_command>FOR</code_command> Y = <code_number>0</code_number> <code_keyword>TO</code_keyword> <code_number>15</code_number><br>
+            <tb><code_command>FOR</code_command> X = <code_number>0</code_number> <code_keyword>TO</code_keyword> <code_number>15</code_number><br>
+            <tb><tb>B = ARRAY((X * <code_number>16</code_number>) + Y)<br>
+            <tb><tb><code_command>PRINT</code_command> <code_function>CHR$</code_function>(B);<br>
+            <tb><code_command>NEXT</code_command><br>
+            <code_command>NEXT</code_command><br>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="divider"></div>
+        <div class="body h2">
+            <h4>SH</h4>
+            4-space indent<br>
+            lowercase commands<br>
+            UPPERCASE variables<br>
+            <br>
+            <div class="code">
+            <code_comment>
+            #!/bin/bash<br>
+            <br>
+            # Comment<br>
+            <br>
+            ##############<br>
+            # Multi-line<br>
+            # Comment<br>
+            ##############<br>
+            </code_comment>
+            <br>
+            <code_keyword>F</code_keyword>=<code_keyword>$@</code_keyword><br>
+            <br>
+            <code_command>if [</code_command> -z <code_string>"<code_keyword>$F</code_keyword>"</code_string> ]; <code_command>then</code_command> <br>
+            <tb><code_command>echo</code_command> -n<br>
+            <code_command>else</code_command><br>
+            <tb><code_keyword>F</code_keyword>=.<code_keyword>$F</code_keyword><br>
+            <code_command>fi<br>
+            <br>
+            chmod</code_command> +x <code_keyword>$A</code_keyword> *<code_keyword>$F</code_keyword><br>
+            </div>
+        </div>
     </body>
     <span id="footer"></span>
     <script>$(document).ready(function(){$('#footer').load('/html/footer.htm');});</script>

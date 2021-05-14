@@ -166,6 +166,18 @@ code:hover, .code:hover {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     background: #1B2331;
 }
+.divider {
+    display: block;
+    padding: 2px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background: #252D3B;
+    border-radius: 2px 2px 2px 2px;
+    position: relative;
+    width: 92%;
+    left: 50%;
+    transform: translate(-50%, 12px);
+}
 .body {
     outline: none;
     color: #fdfdfd;
