@@ -3,13 +3,24 @@
     <script language="JavaScript" type="text/javascript" src="/js/jquery.js"></script>
     <head>
         <script>var name=""</script>
+        <script>var disableTab=true</script>
         <title id="title"></title>
-        <span id="meta"></span>
-        <script>$(document).ready(function(){$('#meta').load('/html/meta.htm');});</script>
+        <link rel="icon" href="/favicon.png"></link>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/base.css">
+        <meta name="description" content="PQCraft's Github.io Page">
+        <meta property="og:image" content="/favicon.png">
+        <meta property="og:site_name" content="PQCraft's Website">
+        <meta property="og:type" content="object">
+        <meta property="og:title" content="PQCraft's Github.io Page">
+        <meta property="og:url" content="https://pqcraft.github.io/">
+        <meta property="og:description" content="Miscellaneous links n' stuff">
     </head>
     <span id="header"></span>
     <script>$(document).ready(function(){$('#header').load('/html/header.htm');});</script>
     <div id="pgname"></div>
+    <script language="JavaScript" type="text/javascript" src="/js/pageload.js"></script>
     <body bgcolor=#000000>
         <div class="body h1">
             <h3>Enter a Custom Title!</h3>
@@ -29,10 +40,9 @@
                 <option>The quick brown fox jumps over the lazy dog</option>
             </select>
             <span style="margin: 0px 2px"></span><button onclick="rfpg_s()">Set</button>
-            <script>ctitle.addEventListener("keydown",function(e){if (e.keyCode === 13){rfpg();}});</script>
+            <script language="JavaScript" type="text/javascript">document.getElementById('ctitle').onkeypress = function(e){if (e.keyCode == 13){rfpg();}};</script>
         </div>
     </body>
     <span id="footer"></span>
     <script>$(document).ready(function(){$('#footer').load('/html/footer.htm');});</script>
-    <script language="JavaScript" type="text/javascript" src="/js/pageload.js"></script>
 </html>

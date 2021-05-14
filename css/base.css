@@ -70,7 +70,7 @@ button:hover {
     border: solid 1px #315BEF;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
 }
-select:hover, input:focus {
+select:hover, input:focus, button:focus, select:focus {
     border: solid 1px #315BEF;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
 }
@@ -254,18 +254,6 @@ code:hover, .code:hover {
 a {
     color: #72C4FF;
     outline: none;
-}
-a.link1:link {
-    text-decoration: none;
-}
-a.link1:visited {
-    text-decoration: none;
-}
-a.link1:hover {
-    text-decoration: underline;
-}
-a.link1:active {
-    text-decoration: underline;
 }
 a.hlink:link {
     text-decoration: none;
