@@ -9,6 +9,6 @@ function pgload() {
         document.getElementById("pgname").outerHTML = divprop1 + '<br>' + divprop2;
     }
     if (typeof disableTab === 'undefined' || disableTab != true) {document.getElementsByTagName('body')[0].outerHTML = document.getElementsByTagName('body')[0].outerHTML.replace(/<tb>/g, "&nbsp;&nbsp;&nbsp;&nbsp;");}
-    document.getElementById("noload").outerHTML = '';
+    if (document.getElementById("noload") != null) {document.getElementById("noload").outerHTML = '';}
 }
 pgload();
